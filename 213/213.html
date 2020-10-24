@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q213</title>
+</head>
+<style>
+    .menuItems1 li{
+        background-color: aqua;
+        background-position:4px;   
+    }
+    .menuItems2 li2{
+        display:inline;
+    }
+    .menuItems3 li3{
+        display: grid;
+    }
+    .menuItems4 li4{
+        display: table;
+    }
+    ul2 {
+        list-style: lower-latin;
+    }
+</style>
+<body>
+    <xmp>
+        QUESTION 213
+        DRAG DROP
+        You have a stylesheet for an existing website.
+
+        The website contains the following HTML markup.
+        
+        <div id="header" 
+            <ul class="menuItems">
+                <li>HOME</li>
+                <li>PRODUCTS</li>
+                <li>ABOUT US</li>
+            </ul>
+        </div>
+        
+        You need to ensure that the <li> elements are aligned horizontally.
+
+        You write the following CSS markup in the stylesheet.
+
+        .menuItems li
+        {
+            Target1: Target 2;    
+        }
+
+        How should you complete the markup? To answer, drag the appropriate code elements to the correcttargets in the answer area. Each code element may be used once, more than once, or not at all. You mayneed to drag the split bar between panes or scroll to view content.
+
+        NOTE: Each correct selection is worth one point.
+
+        Select and Place:
+
+                            Answer Area
+
+        background- position
+        
+        block
+                                        Target 1:   
+        display
+
+        grid
+                                        Target 2:
+        inline
+
+        list-style
+
+        table
+
+
+
+        Correct Answer: 
+
+                            Answer Area
+
+        background- position
+        
+        block
+                                        Target 1:   display
+        
+
+        grid
+                                        Target 2:   inline
+         
+
+        list-style
+
+        table
+
+        Section: Volume D
+        
+        Explanation/Reference:
+        El elemento li representa un item de una lista. Esta puede ser ordenada (<ol></ol>) o no ordenada (<ul></ul>)
+        
+        El atributo background-position: 
+        Define en qué lugar del elemento seleccionado va a aparecer la imagen en cada elemento de lista.  
+
+        El atributo list-style: No es un atributo de li sino un atributo de ul que sirve para definir todas las propiedades de las listas
+        
+        El atributo display: 
+        Indica como se van a mostrar los elementos de la lista. 
+        En las opciones aparecen como posibles valores del atributo los siguientes:
+                
+                block   : El elemento genera un cuadro de elemento de bloque.      
+                inline  : El elemento genera uno o más cuadros de elemento en línea.
+                grid    : El elemento se comporta como un elemento de bloque y establece su contenido de acuerdo con el modelo de cuadrícula.
+                table   : Estos elementos se comportan como elementos HTML <table>. Define un cuadro de nivel de bloque.
+
+        Como se nos indica que se quiere que los elementos de la lsita aparezcan en linea
+
+        References: http://learn.shayhowe.com/html-css/creating-lists/
+    </xmp>
+
+    <p>Comprobacion:</p>
+    <b>EJEMPLO PREGUNTA 213</b>
+    <br> 
+    <div id="content4"></div>
+    <br>
+    <div id="header">
+        <p>Ejemplo con background-position</p>
+        <ul class="menuItems1">
+            <li>HOME</li>
+            <li>PRODUCTS</li>
+            <li>ABOUT US</li>
+        </ul>
+        <br>
+        <p>Ejemplo con display:grid</p>
+        <ul class="menuItems3">
+            <li3>HOME</li3>
+            <li3>PRODUCTS</li3>
+            <li3>ABOUT US</li3>
+        </ul>
+        <br>
+        <p>Ejemplo con display:table</p>
+        <ul class="menuItems4">
+            <li4>HOME</li4>
+            <li4>PRODUCTS</li4>
+            <li4>ABOUT US</li4>
+        </ul>
+        <br>
+        <p>Ejemplo con display:inline</p>
+        <ul class="menuItems2">
+            <li2>HOME</li2>
+            <li2>PRODUCTS</li2>
+            <li2>ABOUT US</li2>
+        </ul>
+        <br>
+        <p>Ejemplo con list-style: lower-latin</p>
+        <ul2>
+            <li>HOME</li>
+            <li>PRODUCTS</li>
+            <li>ABOUT US</li>
+        </ul2>
+    </div>
+</body>
+</html>

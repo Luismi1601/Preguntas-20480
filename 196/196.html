@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q196</title>
+</head>
+
+<body>
+    <xmp>
+        QUESTION 196
+        You are troubleshooting a web page that includes the following code segment.
+        
+        var x = 0;
+        Function fun() {
+            var x=1;
+            if(x) {
+                x=2;
+            }
+        }
+        fun();
+        alert(x);
+        
+        You need to evaluate the value of the variable x.What will be displayed in the user interface?
+        
+        A. 0
+        B. 1
+        C. 2
+        D. An error
+
+        Correct Answer: A
+        Section: Volume D
+
+        Explanation
+        Explanation/Reference:
+        Explanation:
+
+        * Alert(x) is within the scope of the outermost assignment, x=0.
+        * Local variables have local scope: They can only be accessed within the function.
+        Example
+        // code here can not use carName
+        function myFunction() {
+            var carName = "Volvo";    
+        // code here can use carName
+        }
+
+        * A variable declared outside a function, becomes GLOBAL.
+        A global variable has global scope: All scripts and functions on a web page can access it.
+        Example
+
+        var carName = " Volvo";
+        // code here can use carName
+        function myFunction() {    
+        // code here can usecarName
+        }
+
+        * The alert() method displays an alert box with a specified message and an OK button.An alert box is often used if you want to make sure information comes through to the user.
+
+        Reference: https://www.w3schools.com/js/js_scope.asp
+    </xmp>
+
+    <p>Comprobacion:</p>
+    <b>EJEMPLO PREGUNTA 196</b>
+    Al estar fuera del alcance se ejecuta la función directamente y muestra el mensaje.
+    <br>
+    VARIANTE: 
+    <p><button type="button1" onclick="fun2()">Presiona caso alert dentro del alcance de la función</button></p>
+    <br>
+    <script>
+        var x = 0;
+        function fun() {
+            var x=1;
+            if(x) {
+                x=2;
+            }
+        }
+        fun();
+        alert(x);
+
+        function fun2() {
+            var x=1;
+            if(x) {
+                x=2;
+            }
+            alert(x);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q179</title>
+</head>
+
+<body>
+    <xmp>
+        QUESTION 179
+        You are developing an application to track project management for your company. 
+        The status of the projectis stored in a variable named percentComplete.
+        The method must execute only when percentComplete is equal to the numeric value 100.
+        You need to develop the application to meet the requirement.
+        Which code segment should you use?
+        
+        A. Option A if (percentComplete = 100 || percentCompelte != 100) 
+            {
+                ...
+            }
+        NO ES CORRECTA LA OPCION A YA QUE EN EL SUPUESTO SE PIDE QUE EL METODO DEBE SE DEBE EJECUTAR SOLO CUANDO
+        LA VARIABLE percentComplete SEA IGUAL AL NUMERO 100. EN ESTA OPCION ES UNA CONDICION COMPUESTA QUE 
+        SIEMPRE MOSTARIA VERDADERO YA QUE PREGUNTA SI LA VARAIBLE ES IGUAL A 100 O SI ES DISTINTA DE 100.
+
+        B. Option B if (percentComplete = 100 && percentComplete !=100) 
+            {
+                ...
+            }
+        NO ES CORRECTA LA OPCION B YA QUE EN EL SUPUESTO SE PIDE QUE EL METODO DEBE SE DEBE EJECUTAR SOLO CUANDO
+        LA VARIABLE percentComplete SEA IGUAL AL NUMERO 100. EN ESTA OPCION ES UNA CONDICION COMPUESTA QUE NUNCA
+        SACARIA NADA YA QUE LA VARAIBLE NO PUEDE SER IGUAL A 100 Y DISTINTA DE 100 A LA VEZ.
+    
+        C. Option C if (percentComplete % 100) 
+            {
+                ...
+            }
+        NO ES CORRECTA LA OPCION C YA QUE EN EL SUPUESTO SE PIDE QUE EL METODO DEBE SE DEBE EJECUTAR SOLO CUANDO
+        LA VARIABLE percentComplete SEA IGUAL AL NUMERO 100. EN ESTA OPCION EL OPERADOR DE COMPARACION NO EXISTE.
+            
+        D. Option D if (percentComplete === 100) 
+            {
+                ...
+            }
+        ES CORRECTA LA OPCION D YA QUE EN EL SUPUESTO SE PIDE QUE EL METODO DEBE SE DEBE EJECUTAR SOLO CUANDO
+        LA VARIABLE percentComplete SEA IGUAL AL VALOR NUMERICO 100. EL OPERADOR DE COMPARACION === SIRVE PARA
+        REALIZAR COMPARACIONES ESTRICTAS SIN CONVERSION DE TIPOS.
+            
+        E. Option E if (percentComplete = 100) 
+            {
+                ...
+            }
+        NO ES CORRECTA LA OPCION E YA QUE EN EL SUPUESTO SE PIDE QUE EL METODO DEBE SE DEBE EJECUTAR SOLO CUANDO
+        LA VARIABLE percentComplete SEA IGUAL AL VALOR NUMERICO 100.  EN ESTA OPCION EL OPERADOR DE COMPARACION NO EXISTE.
+    
+        Correct Answer: D
+        Section: Volume D
+        Explanation
+        Explanation/Reference:
+        Explanation:
+        = = =: This is “strict” or “identical” equality.
+        Reference: 
+        http://conceptf1.blogspot.com/2014/01/javascript-triple-equals-vs-double-equals-operators.html
+    </xmp>
+
+    <p>Comprobacion:</p>
+    <b>EJEMPLO PREGUNTA 179</b>
+    <br> 
+    <div id="content4"></div>
+    <br>
+    <script>
+        function resultado4 (percentComplete)
+        {
+            if (percentComplete === 100) 
+            {
+                var texto4 = "La opcion D funciona";
+            }
+            else
+            {
+                var texto4 = "La opcion D no funciona";
+            }
+            document.getElementById("content4").innerHTML = texto4;
+          };
+        resultado4(100);
+    </script>
+</body>
+</html>
